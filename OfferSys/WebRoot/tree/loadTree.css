@@ -1,0 +1,38 @@
+
+#tree{/*border: solid 1px red;*/width: 220px; }
+
+#tree ul{/*border: solid 1px blue;*/padding-left: 20px;list-style: none;background: url(./tree-line.png) repeat-y 0px 0px;}
+
+#tree ul li{/*border: solid 1px red;*/font-size: 12px;width:auto;}
+
+#tree ul li div{font-size: 12px;height: 20px;font-weight:bold;display: block;}
+
+#tree ul div a{color: #0cb36f;height: 20px;line-height: 20px;vertical-align:top;cursor: pointer;text-decoration: none;}
+/*#tree ul div a:link {color: #0cb36f}		 未访问的链接 
+#tree ul div a:visited {color: #272822}	 已访问的链接 */
+#tree ul div a:hover {color: #272822}	/* 鼠标移动到链接上 */
+/*#tree ul div a:active {color: #272822}	 选定的链接 */
+
+
+#tree ul div i{/*border:solid 1px black;*/width:20px ;height:20px;display: inline-block;cursor:pointer;/*margin-right: -5px;*/}
+
+.default_A{background: url(./tree.png) no-repeat 0px -20px;}
+
+.default_B{background: url(./tree.png) no-repeat -100px -20px;}
+
+.node{background: url(./tree.png) no-repeat -20px -20px;}
+
+.node_first{background: url(./tree.png) no-repeat -20px -20px;}
+
+.node_open{background: url(./tree.png) no-repeat -40px -20px;}
+
+.node_last{background: url(./tree.png) no-repeat -20px -40px;}
+
+.node_last_open{background: url(./tree.png) no-repeat -40px -40px;}
+
+.folder{background: url(./tree.png) no-repeat -80px -20px;}
+
+.folder_open{background: url(./tree.png) no-repeat -60px -20px;}
+
+.last_li_icon{background: url(./tree.png) no-repeat 0px -40px;}
+

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <session-config>
+  	<session-timeout>1440</session-timeout>
+  </session-config>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DvrControllerServlet</servlet-name>
+    <servlet-class>com.hxm.control.DvrControllerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FileUplaodServlet</servlet-name>
+    <servlet-class>com.hxm.control.FileUplaodServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GpsControllerServlet</servlet-name>
+    <servlet-class>com.hxm.control.GpsControllerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PndControllerServlet</servlet-name>
+    <servlet-class>com.hxm.control.PndControllerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateDvrPdfServlet</servlet-name>
+    <servlet-class>com.hxm.control.CreateDvrPdfServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateDvrExcelServlet</servlet-name>
+    <servlet-class>com.hxm.control.CreateDvrExcelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DownLoadServlet</servlet-name>
+    <servlet-class>com.hxm.control.DownLoadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateGpsPdfServlet</servlet-name>
+    <servlet-class>com.hxm.control.CreateGpsPdfServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreatePndPdfServlet</servlet-name>
+    <servlet-class>com.hxm.control.CreatePndPdfServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateGpsExcelServlet</servlet-name>
+    <servlet-class>com.hxm.control.CreateGpsExcelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreatePndExcelServlet</servlet-name>
+    <servlet-class>com.hxm.control.CreatePndExcelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.hxm.control.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MirrorControllerServlet</servlet-name>
+    <servlet-class>com.hxm.control.MirrorControllerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateMirrorExcelServlet</servlet-name>
+    <servlet-class>com.hxm.control.CreateMirrorExcelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateMirrorPdfServlet</servlet-name>
+    <servlet-class>com.hxm.control.CreateMirrorPdfServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManualUplaodServlet</servlet-name>
+    <servlet-class>com.hxm.control.ManualUplaodServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WexinService</servlet-name>
+    <servlet-class>  com.hxm.wechart.control.WexinService</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManualControllerServlet</servlet-name>
+    <servlet-class>com.hxm.control.ManualControllerServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>WexinService</servlet-name>
+    <url-pattern>/servlet/WexinService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ManualUplaodServlet</servlet-name>
+  	 <url-pattern>/servlet/ManualUplaodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownLoadServlet</servlet-name>
+    <url-pattern>/servlet/DownLoadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DvrControllerServlet</servlet-name>
+    <url-pattern>/servlet/DvrControllerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileUplaodServlet</servlet-name>
+    <url-pattern>/servlet/FileUplaodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GpsControllerServlet</servlet-name>
+    <url-pattern>/servlet/GpsControllerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PndControllerServlet</servlet-name>
+    <url-pattern>/servlet/PndControllerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateDvrPdfServlet</servlet-name>
+    <url-pattern>/servlet/CreateDvrPdfServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateDvrExcelServlet</servlet-name>
+    <url-pattern>/servlet/CreateDvrExcelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateGpsPdfServlet</servlet-name>
+    <url-pattern>/servlet/CreateGpsPdfServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreatePndPdfServlet</servlet-name>
+    <url-pattern>/servlet/CreatePndPdfServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateGpsExcelServlet</servlet-name>
+    <url-pattern>/servlet/CreateGpsExcelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreatePndExcelServlet</servlet-name>
+    <url-pattern>/servlet/CreatePndExcelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MirrorControllerServlet</servlet-name>
+    <url-pattern>/servlet/MirrorControllerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateMirrorExcelServlet</servlet-name>
+    <url-pattern>/servlet/CreateMirrorExcelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateMirrorPdfServlet</servlet-name>
+    <url-pattern>/servlet/CreateMirrorPdfServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManualControllerServlet</servlet-name>
+    <url-pattern>/servlet/ManualControllerServlet</url-pattern>
+  </servlet-mapping>		
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>

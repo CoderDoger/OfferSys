@@ -1,0 +1,54 @@
+package com.hxm.util;
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFFont;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.BorderStyle;
+import org.apache.poi.ss.usermodel.HorizontalAlignment;
+
+
+
+
+public class EXCELTool {
+
+	public static HSSFFont getFont(HSSFWorkbook workbook){
+	    HSSFFont font =workbook.createFont();    
+	    font.setFontName("黑体");    
+	    font.setFontHeightInPoints((short) 22);// 字体大小    
+	    font.setBold(true);// 加粗  
+	    return font;
+	}
+	//
+	public static HSSFCellStyle getBorder(HSSFWorkbook workbook){
+		//生成一个样式
+		HSSFCellStyle style = workbook.createCellStyle();
+		style.setBorderBottom(BorderStyle.THIN);//下边框    
+		style.setBorderLeft(BorderStyle.THIN);//左边框
+		style.setBorderTop(BorderStyle.THIN);//上边框    
+		style.setBorderRight(BorderStyle.THIN);//右边框
+		//style.setAlignment(HorizontalAlignment.CENTER);
+		style.setVerticalAlignment(org.apache.poi.ss.usermodel.VerticalAlignment.CENTER);
+		return style;
+	}
+	//
+	public static HSSFCellStyle getCenterStyle(HSSFWorkbook workbook){
+		//生成一个样式
+		HSSFCellStyle style = workbook.createCellStyle();
+		style.setBorderBottom(BorderStyle.THIN);//下边框    
+		style.setBorderLeft(BorderStyle.THIN);//左边框
+		style.setBorderTop(BorderStyle.THIN);//上边框    
+		style.setBorderRight(BorderStyle.THIN);//右边框
+		style.setAlignment(HorizontalAlignment.CENTER);
+		style.setVerticalAlignment(org.apache.poi.ss.usermodel.VerticalAlignment.CENTER);
+		return style;
+	}
+	//
+	public static HSSFCell getCell(HSSFRow row,int position,String value,HSSFCellStyle style){
+		HSSFCell cell = row.createCell(position);
+		cell.setCellValue(value);
+		cell.setCellStyle(style);
+		return cell;	
+	}
+}

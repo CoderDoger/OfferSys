@@ -1,0 +1,8 @@
+create table manual(
+	id int(4) not null primary key  auto_increment,
+	objName varchar(255) not null,
+	productName varchar(255) not null,
+	fileName varchar(255) not null,
+	fileSize int(10) not null,
+	author varchar(255) not null
+);

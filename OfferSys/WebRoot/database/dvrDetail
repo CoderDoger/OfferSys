@@ -1,0 +1,61 @@
+create table dvrDetail(
+	id int(4) not null primary key auto_increment,
+	imageId varchar(255) not null,
+	productType varchar(255) not null,
+	model varchar(255) not null,
+	cpu varchar(255) not null,
+	lcd varchar(255) not null,
+	frontCamera varchar(255) not null,
+	videoFormat varchar(255) not null,
+	frameRate varchar(255) not null,
+	photoResolution varchar(255) not null,
+	photoFormat varchar(255) not null,
+	storageCard varchar(255) not null,
+	
+	cardCapacity varchar(255) not null,
+	rearCamera varchar(255) not null,
+	gsensor varchar(255) not null,
+	gps varchar(255) not null,
+	wifi varchar(255) not null,
+	tvout varchar(255) not null,
+	hdmi varchar(255) not null,
+	wdr varchar(255) not null,
+	adas varchar(255) not null,
+	
+	usb varchar(255) not null,
+	powerSource varchar(255) not null,
+	batter varchar(255) not null,
+	mic varchar(255) not null,
+	speaker varchar(255) not null,
+	language varchar(255) not null,
+	operatingTemperature varchar(255) not null,
+	storageTemperature varchar(255) not null,
+	weight varchar(100) ,
+	dimension varchar(100), 
+	htmlStatic int(1) not null default 0
+) ENGINE=MyISAM DEFAULT CHARSET=utf8; 
+
+
+mysql在做多字段模糊查询的时候用的语句是
+
+select * from tablename where concat(name,brand) like '%关键词%' 
+
+concat的 作用是 将多条字段拼成字符串。 
+结果发现有些条目查询不出来
+问题是 
+concat（）中有任何参数是null 则返回为空
+
+解决办法 
+1、把null的条目让他不是null 
+2、concat_ws()方法 
+用法：concat_ws(separator,str1,str2,…) 
+以separator作为分隔符 拼接后面的参数 成为一个字符串 
+有null 也无所谓 
+所以我们把语句改为
+
+select * from tablename where concat_ws("",name,brand) like '%关键词%'
+
+就可以查询出所有条目了，有null也ok
+
+
+select count(*) from dvrdetail where concat_ws('',imageId,productType,model,cpu,lcd,frontCamera,videoFormat,frameRate,photoResolution,photoFormat,storageCard,cardCapacity,rearCamera,gsensor,gps,wifi,tvout,hdmi,wdr,adas,usb,powerSource,batter,mic,speaker,language,operatingTemperature,storageTemperature,weight,dimension) like '%4105%'

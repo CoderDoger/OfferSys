@@ -1,0 +1,8 @@
+authentication
+
+add		del		modify		query
+
+1		1		 1			1
+
+
+//鉴权  增删改查

@@ -1,0 +1,20 @@
+::-webkit-scrollbar {  
+  width: 12px;  
+} 
+
+::-webkit-scrollbar-track{
+	border: solid 1px #2AD4FF;
+	border-radius: 5px;
+	box-shadow: 0 0 6px #2AD4FF inset;
+}
+
+::-webkit-scrollbar-thumb{
+	border: solid 1px #2AD4FF;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #2AD4FF inset;
+}
+
+*{margin:0px;padding:0px;font-size: 12px;font-family: "楷体",'arial', 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', '宋体';}
+#bottom{text-align: center;}
+#bottom p{line-height: 20px;font-weight: bolder;}
+#bottom a{line-height: 20px;font-weight: bolder;text-decoration: none;}
